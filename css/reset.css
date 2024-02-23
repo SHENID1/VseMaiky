@@ -1,0 +1,490 @@
+/*
+	НЕ УДАЛЯТЬ ЭТОТ ФАЙЛ
+	НУЖЕН ДЛЯ ЕДИНОГО ОТОБРАЖЕНИЯ ЭЛЕМЕНТОВ В РАЗНЫХ БРАУЗЕРАХ
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MontserratBOLD';
+    src: url('./Montserrat-ExtraBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Montserrat;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.headCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(29, 23, 23);
+}
+
+.headLink {
+    margin-top: 9px;
+    height: 25px;
+    margin-right: 20px;
+    color: white;
+}
+
+.content {
+    width: 100%;
+    min-width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper {
+    width: 880px;
+}
+
+/* .name {
+  margin-left: 71px;
+  margin-top: 30px;
+} */
+
+.t1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.t2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.block1 {
+    width: 100%;
+    margin: 20px 0 70px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+
+.c1 {
+    font-size: 17px;
+    font-weight: bolder;
+}
+
+.market {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.n {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.marketlogo {
+    width: auto;
+    height: 50px;
+}
+
+.spiderman {
+    width: auto;
+    height: 350px;
+    /* left: 0;
+    position: absolute; */
+}
+
+.block2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: max-content;
+}
+
+.hed1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.textblock1 {
+    background-color: #f1f1f1;
+    border: 35px SOLID #f1f1f1;
+    font-size: 20px;
+    min-width: max-content;
+    width: calc(100% - 35 * 2px);
+    font-weight: 600;
+}
+
+.text2 {
+    height: max-content;
+    width: max-content;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sp {
+    list-style-type: disc;
+    width: max-content;
+}
+
+.block3 {
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    width: min-content;
+    height: max-content;
+}
+
+.textblock2 {
+    background-color: #f1f1f1;
+    border-left: 25px SOLID #f1f1f1;
+    border-top: 25px SOLID #f1f1f1;
+    border-bottom: 25px SOLID #f1f1f1;
+    border-right: 10px SOLID #f1f1f1;
+    font-size: 15px;
+    min-width: min-content;
+    width: calc(100% - 25 * 2px);
+    font-weight: 600;
+    word-wrap: normal;
+}
+
+.sp1 {
+    list-style-type: disc;
+    width: max-content;
+
+}
+
+.nightcrawler {
+    width: auto;
+    height: 300px;
+}
+
+.block4 {
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 20px 0 20px 0;
+}
+
+.grouppictures {
+    width: 50%;
+    height: 600px;
+    position: relative;
+}
+
+.pngg::before {
+    top: 0px;
+    left: 0px;
+}
+
+.pngg {
+    position: absolute;
+    top: 125px;
+    left: 5px;
+    height: auto;
+    width: 150px;
+    z-index: 3;
+}
+
+.venom::before {
+    top: 0px;
+    left: 0px;
+}
+
+.venom {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 25px;
+    height: auto;
+    width: 450px;
+}
+
+.ironman::before {
+    top: 0px;
+    left: 0px;
+}
+
+.ironman {
+    position: absolute;
+    top: 0px;
+    left: 285px;
+    height: 227px;
+    width: 182px;
+    z-index: 2;
+}
+
+.storm::before {
+    top: 0px;
+    left: 0px;
+}
+
+.storm {
+    position: absolute;
+    top: 187px;
+    left: -8px;
+    height: 400px;
+    width: 400px;
+    z-index: 2;
+}
+
+.thor::before {
+    top: 0px;
+    left: 0px;
+}
+
+.thor {
+    position: absolute;
+    top: 244px;
+    left: 276px;
+    height: auto;
+    width: 200px;
+    z-index: 2;
+}
+
+.ost {
+    background-color: #dedfde;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.but {
+    background-color: #dedfde;
+    place-self: flex-end;
+    width: 100%;
+}
+
+button {
+    margin-left: 35px;
+    margin-bottom: 20px;
+    width: 270px;
+    height: 60px;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px SOLID black;
+    color: white;
+    font-family: Montserrat, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-style: italic;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.ts {
+    width: 50%;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft {
+    position: relative;
+}
+
+.tshirt_img {
+    width: 380px;
+    height: auto;
+}
+#insideimg {
+    width: 230px;
+    height: auto;
+    position: absolute;
+    top: 104px;
+    right: 71px;
+}
+
+.rbuttons {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: max-content;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: MontserratBOLD, serif;
+    margin-top: 20px;
+    user-select: none;
+}
+
+input {
+    appearance: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 0, 0, 0.81);
+    transition: 0.2s all linear;
+    position: relative;
+
+}
+
+input:checked {
+    border: 10px solid #ff0000;
+}
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footercontent {
+    width: 880px;
+    height: 60px;
+    color: white;
+    padding: 30px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Печать НаВсеМайки.ру</title>
+</head>
+<body>
+<header>
+    <div class="headCont">
+        <div class="headLink">🚚 Доставка по России</div>
+        <div class="headLink">💰 Моментальная оплата</div>
+        <div class="headLink">⚡ Сделаем за 12 часов</div>
+        <div class="headLink">📞 +7 456 789 01 23</div>
+    </div>
+</header>
+<main class="content">
+    <div class="wrapper">
+        <div class="block1">
+            <div class="name">
+                <div class="t1">Печать ◀///</div>
+                <div class="t2">NaVseMayki.ru</div>
+            </div>
+            <div class="c1">
+                Широкий выбор персонажей<br/>из популярных киновселенных
+            </div>
+            <div class="market">
+                <img class="marketlogo" src="./images/cart.png"/>
+                <div class="n">0</div>
+            </div>
+        </div>
+        <div class="block2">
+            <img class="spiderman" src="./images/spiderman.png"/>
+            <div class="text2">
+                <div class="hed1">— Выбери свою Вселенную!</div>
+                <div class="textblock1">
+                    <ul class="sp">
+                        <li>Подбери иллюстрацию</li>
+                        <li>Выбери размер и тип футболки</li>
+                        <li>Заполни форму</li>
+                        <li>Футболка с принтом готова!</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="block3">
+            <img class="nightcrawler" src="./images/nightcrawler.png"/>
+            <div class="text2">
+                <div class="hed1">- На чьей ты стороне?</div>
+                <div class="textblock2">
+                    <ul class="sp1">
+                        <li>Печатаем на любой стороне</li>
+                        <li>Закупаем футболки из 100% хлолка от<br/>
+                            производителя с минимальными наценками
+                        </li>
+                        <li>Используем технологию термопереноса,<br/>
+                            благодаря чему картинка получается яркой и<br/>
+                            сохраняется долгое время
+                        </li>
+                        <li>Готовые изделия можно забрать у<br/>
+                            производителя, заказать курьерскую доставку<br/>
+                            или получить в любом отделении почты России
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="block4">
+            <div class="hed1">Выбери изображение персонажа и укажи размер</div>
+            <div class="ost">
+                <div class="grouppictures">
+                    <img src="./images/pngg.png" alt="" class="pngg"/>
+                    <img src="./images/venom.png" alt="" class="venom"/>
+                    <img src="./images/ironman.png" alt="" class="ironman"/>
+                    <img src="./images/storm.png" alt="" class="storm"/>
+                    <img src="./images/thor.png" alt="" class="thor"/>
+                </div>
+
+                <div class="ts">
+                    <div class="ft">
+                        <img alt="" src="./images/white-tshhirt.png" class="tshirt_img"/>
+                        <img alt="" src="./images/ironman.png" id="insideimg"/>
+                    </div>
+                    <form>
+                        <fieldset>
+                            <div class="rbuttons">
+                                <label><input type="radio" id="S" name="contact" value="email"/>
+                                    S
+                                </label>
+                                <label>
+                                    <input type="radio" id="M" name="contact" value="phone"/>
+                                    M
+                                </label>
+                                <label>
+                                    <input type="radio" id="L" name="contact" value="mail"/>
+                                    L
+                                </label>
+                                <label>
+                                    <input type="radio" id="XL" name="contact" value="mail"/>
+                                    XL
+                                </label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="but">
+                <button type="submit" id="button">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footercontent">
+        ООО НаВсеМайки.ру
+        <br/><br/>
+        Юр. адрес: 116437,<br/> г. Энск, ул. Ленина, 42
+    </div>
+</footer>
+</body>
+<script>
+    const pngg = document.getElementsByClassName("pngg");
+    const ven = document.getElementsByClassName("venom");
+    const thor = document.getElementsByClassName("thor");
+    const ironman = document.getElementsByClassName("ironman");
+    const storm = document.getElementsByClassName("storm");
+    document.getElementById("S").click()
+    let count = 0;
+    const button = document.getElementById("button")
+    button.addEventListener("click", () => {
+        count += 1
+        document.getElementsByClassName("n")[0].innerText = count
+    })
+    let using_img = "./images/pngg.png";
+
+    // console.log(n)
+    ven[0].addEventListener("click", () => {
+        console.log("venom");
+        using_img = "./images/venom.png"
+        document.getElementById("insideimg").src = using_img
+        document.getElementById("insideimg").style.top = "142px";
+        document.getElementById("insideimg").style.right = "83px";
+    })
+    pngg[0].addEventListener("click", () => {
+        console.log("pngg");
+        using_img = "./images/pngg.png"
+        document.getElementById("insideimg").src = using_img
+        document.getElementById("insideimg").style.top = "37px";
+        document.getElementById("insideimg").style.right = "73px";
+
+    })
+    thor[0].addEventListener("click", () => {
+        console.log("thor");
+        using_img = "./images/thor.png"
+        document.getElementById("insideimg").src = using_img
+        document.getElementById("insideimg").style.top = "113px";
+        document.getElementById("insideimg").style.right = "81px";
+        document.getElementById("insideimg").style.width = "220px";
+    })
+    ironman[0].addEventListener("click", () => {
+        console.log("ironman");
+        using_img = "./images/ironman.png"
+        document.getElementById("insideimg").src = using_img
+        document.getElementById("insideimg").style.top = "104px";
+        document.getElementById("insideimg").style.right = "79px";
+    })
+    storm[0].addEventListener("click", () => {
+        console.log("storm");
+        using_img = "./images/storm.png"
+        document.getElementById("insideimg").src = using_img
+        document.getElementById("insideimg").style.top = "147px";
+        document.getElementById("insideimg").style.right = "73px";
+    })
+    ironman[0].click();
+</script>
+</html>
+
+
+<!--style="top: 0; left: 0"
+style="top: 0; left: 0"
+style="top: 0; left: 0"
+style="top: 0; left: 0"
+style="top: 0; left: 0"-->
